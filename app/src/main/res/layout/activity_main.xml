@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MainActivity"
+            >
+
+            <EditText
+                    android:layout_marginTop="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ProjectUrl"
+                    android:inputType="textUri"
+                    android:hint="@string/url_input"
+            />
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:id="@+id/addProject"
+                    android:layout_below="@id/ProjectUrl"
+                   />
+            <Button android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_all"
+                    android:id="@+id/ViewAll"
+                    android:layout_below="@id/addProject"
+            />
+
+</RelativeLayout>

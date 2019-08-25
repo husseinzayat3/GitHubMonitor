@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProjectDetails">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Project Name"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="40dp"
+              android:textColor="@color/colorPrimary"
+
+              android:layout_alignParentTop="true"
+              android:id="@+id/projectName"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Username"
+              android:textColor="@color/colorPrimary"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/projectName"
+              android:id="@+id/username"/>
+
+  <LinearLayout android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/username"
+                android:id="@+id/num_commits_label">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Number of commits: "
+              android:layout_alignParentStart="true"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="# commits"
+              android:textColor="@color/colorPrimary"
+              android:id="@+id/num_commits"/>
+  </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_below="@id/num_commits_label"
+                  android:id="@+id/date_label">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Last Commit date: "
+                  android:layout_alignParentStart="true"
+        />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="last commit date"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/num_commits_label"
+              android:id="@+id/latest_commit"
+              android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_below="@id/date_label"
+                  android:id="@+id/num_contributors_label">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Number of contributors: "
+                  android:layout_alignParentStart="true"
+        />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="# contributors"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/latest_commit"
+              android:id="@+id/num_contributors"
+              android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_below="@id/num_contributors_label"
+                  android:id="@+id/num_followers_label">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="User # followers: "
+                  android:layout_alignParentStart="true"
+        />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="# followers"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/num_contributors"
+              android:id="@+id/num_followers"
+              android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:layout_below="@id/num_followers_label"
+                  android:id="@+id/num_stars_label">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="User # stars: "
+                  android:layout_alignParentStart="true"
+        />
+        <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="#stars"
+              android:layout_centerHorizontal="true"
+              android:layout_below="@+id/num_followers"
+              android:id="@+id/num_stars"
+              android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_below="@+id/num_stars_label"
+            android:text="@string/delete"
+            android:id="@+id/delete"/>
+
+</RelativeLayout>

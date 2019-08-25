@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GitHubMonitor</string>
+    <string name="add">ADD</string>
+    <string name="url_input">Enter Project Url here</string>
+    <string name="view_all">View All</string>
+    <string name="delete">Delete Project</string>
+    <string-array name="Colors">
+        <item name="color">Red</item>
+        <item name="color">Orange</item>
+        <item name="color">Yellow</item>
+        <item name="color">Green</item>
+        <item name="color">Blue</item>
+        <item name="color">White</item>
+        <item name="color">Black</item>
+        <item name="color">Purple</item>
+        <item name="color">Pink</item>
+        <item name="color">Gray</item>
+        <item name="color">Cyan Blue</item>
+        <item name="color">Magenta</item>
+    </string-array>
+</resources>
